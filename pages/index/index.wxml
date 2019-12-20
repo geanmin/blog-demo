@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+   <!--轮播-->
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}">
+             <image src = "{{item}}"></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+
+    <!--分类-->  
+   <view class="classify">
+     <view class="classifycatid">
+      <image src=""></image>
+     </view>
+   </view>   
+</view>
