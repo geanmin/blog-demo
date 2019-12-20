@@ -14,7 +14,14 @@
     <!--分类-->  
    <view class="classify">
      <view class="classifycatid">
-      <image src=""></image>
+      <view class="imageSigle">
+        <image src="../../images/1.png" mode = "{{center}}"></image>
+      </view>
+      <view class="imageSigle">
+        <image src="../../images/2.png" mode = "{{center}}"></image>
+      </view>
+      <view class="imageSigle">
+      </view>
      </view>
    </view>   
 </view>
