@@ -15,13 +15,24 @@
    <view class="classify">
      <view class="classifycatid">
       <view class="imageSigle">
-        <image src="../../images/1.png" mode = "{{center}}"></image>
+        <image src="../../images/Category.png" mode = "{{center}}"></image>
+        <p>全部分类</p>
       </view>
       <view class="imageSigle">
         <image src="../../images/2.png" mode = "{{center}}"></image>
+        <p>优惠券</p>
       </view>
       <view class="imageSigle">
+        <image src="../../images/apparel.png" mode = "{{center}}"></image>
+        <p>精品推荐</p>
+      </view>
+      <view class="imageSigle">
+        <image src="../../images/bags.png" mode = "{{center}}"></image>
+        <p>今日特价</p>
       </view>
      </view>
+   </view>
+   <view class="category">
+     <view class="line"></view>
    </view>   
 </view>
