@@ -14,7 +14,6 @@ Page({
     autoplay: true,
     interval: 2000,
     duration: 500
-
   },
   //事件处理函数
   bindViewTap: function() {

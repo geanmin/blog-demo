@@ -33,6 +33,13 @@
      </view>
    </view>
    <view class="category">
-     <view class="line"></view>
+     <view class="categoryspecial">
+       <p>今日特价</p>
+       <view class="categoryline"></view>
+       <view class="specialgoods"><image src="../../images/banana.jpg" mode="{{center	}}"></image></view>
+       <view class="specialgoods"><image src="../../images/grape.jpg" mode="{{center	}}"></image></view>
+       <view class="specialgoods"><image src="../../images/litchi.jpg" mode="{{center	}}"></image></view>
+       <view class="specialgoods"><image src="../../images/melon.jpg" mode="{{center	}}"></image></view>
+     </view>
    </view>   
 </view>
