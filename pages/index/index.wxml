@@ -1,45 +1,44 @@
 <!--index.wxml-->
 <view class="container">
-   <!--轮播-->
-    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-        <block wx:for="{{background}}" wx:key="*this">
-          <swiper-item>
-            <view class="swiper-item {{item}}">
-             <image src = "{{item}}"></image>
-            </view>
-          </swiper-item>
-        </block>
-      </swiper>
+  <!--轮播-->
+  <swiper indicator-dots="{{true}}" autoplay="true" interval="2000" duration="500">
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item>
+        <view class="swiper-item {{item.img}}">
+          <image src="{{item.img}}"></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
 
-    <!--分类-->  
-   <view class="classify">
-     <view class="classifycatid">
-      <view class="imageSigle">
-        <image src="../../images/Category.png" mode = "{{center}}"></image>
-        <p>全部分类</p>
-      </view>
-      <view class="imageSigle">
-        <image src="../../images/2.png" mode = "{{center}}"></image>
-        <p>优惠券</p>
-      </view>
-      <view class="imageSigle">
-        <image src="../../images/apparel.png" mode = "{{center}}"></image>
-        <p>精品推荐</p>
-      </view>
-      <view class="imageSigle">
-        <image src="../../images/bags.png" mode = "{{center}}"></image>
+  <!--分类-->
+  <view class="classify">
+    <view class="classifycatid">
+      <block wx:for="{{ProductCateGory}}" wx:key="key" wx:for-item="itemName">
+        <view class="imageSigle">
+          <image src="{{itemName.img}}" mode="{{center}}"></image>
+          <p>{{itemName.name}}</p>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="category">
+    <!--商品页-->
+    <view class="categoryspecial">
+      <view wx:if="{{dailyReal.length}}">
         <p>今日特价</p>
+        <view class="categoryline"></view>
+        <view class="specialgoods" wx:for="{{dailyReal}}" wx:for-item="item" wx:key="key">
+          <image src="{{item.img[0]}}" mode="{{center}}"></image>
+        </view>
       </view>
-     </view>
-   </view>
-   <view class="category">
-     <view class="categoryspecial">
-       <p>今日特价</p>
-       <view class="categoryline"></view>
-       <view class="specialgoods"><image src="../../images/banana.jpg" mode="{{center	}}"></image></view>
-       <view class="specialgoods"><image src="../../images/grape.jpg" mode="{{center	}}"></image></view>
-       <view class="specialgoods"><image src="../../images/litchi.jpg" mode="{{center	}}"></image></view>
-       <view class="specialgoods"><image src="../../images/melon.jpg" mode="{{center	}}"></image></view>
-     </view>
-   </view>   
+    </view>
+  </view>
 </view>
+<view class="ProductDetails">
+  <p>今日特价</p>
+  <view class="categoryline"></view>
+</view>
+<loading hidden="{{loadingHidden}}">
+  加载中...
+</loading>

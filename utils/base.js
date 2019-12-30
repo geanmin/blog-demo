@@ -3,13 +3,14 @@ import {Token}  from 'token.js';
 
 class Base{
    constructor(){
-     this.baseRestUrl = Config.baseRestUrl;
+     this.baseRestUrl = Config.restUrl;  
    }
 
    //http请求类
    Request(params , noRefetch){
       var that = this;
-          url = this.baseRestUrl + params.url;
+      var url = this.baseRestUrl + params.url;
+    //  console.log(this.baseRestUrl);
       //请求类型
       if(!params.type){
          params.type = 'get';
@@ -20,11 +21,17 @@ class Base{
         data: params.data,
         dataType: JSON,
         success:function(res){
-            if(res.head == 200){
-              params.sCallback&&params.sCallback(res.data);
-            }else{
-              params.eCallback&&params.eCallback(res.data);
+          if(res.data){
+            var jsonStr = res.data;
+            var obj = JSON.parse(jsonStr);
+            // console.log(obj);
+            if (obj.head == '200') {
+              params.sCallback && params.sCallback(obj);
+            } else {
+              params.eCallback && params.eCallback(obj);
             }  
+          }
+          
         },
         fail:function(){
 

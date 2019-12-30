@@ -4,6 +4,6 @@ class Config{
   }
 }
 
-Config.restUrl = "https://www.geanmin.club/";
+Config.restUrl = "https://geanmin.club";
 
 export {Config};

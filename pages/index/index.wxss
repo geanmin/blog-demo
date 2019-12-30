@@ -42,7 +42,6 @@
 }
 .category .categoryspecial{
   width: 100%;
-  height: 650rpx;
   /* border: 1rpx solid red; */
 }
 .category p{
@@ -64,4 +63,12 @@
 .category .specialgoods image{
   width: 100%;
   height: 100%;
+}
+.ProductDetails{
+  width: 100%;
+}
+.ProductDetails p{
+   font-size: 25%; 
+  color: green;
+  margin-left: 20rpx;
 }
