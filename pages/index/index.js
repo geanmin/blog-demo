@@ -11,7 +11,7 @@ Page({
     background: [],//轮播图
     ProductCateGory:[],//分类
     dailyReal:[], //今日特价
-    ProductDetails:[], //商品详情
+    Details:[], //商品详情
   },
   onLoad: function () {
     //初始化
@@ -31,7 +31,6 @@ Page({
 
     //获取分类
     home.getProductCatColumnData((data)=>{
-          //  console.log(data);
            that.setData({
              ProductCateGory:data,
            });
@@ -39,7 +38,7 @@ Page({
 
     //今日特价
     home.getDailyReals((data)=>{
-      // console.log(data);
+      console.log(data);
        that.setData({
          dailyReal:data,
        });
@@ -49,7 +48,7 @@ Page({
     home.getCateGoryProduct((data)=>{
       console.log(data);
       that.setData({
-        ProductDetails: data,
+        Details: data,
       });
     });
   },

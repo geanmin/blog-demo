@@ -35,10 +35,30 @@
     </view>
   </view>
 </view>
+
+<!--商品详情页-->
 <view class="ProductDetails">
-  <p>今日特价</p>
-  <view class="categoryline"></view>
+
+  <view wx:for="{{Details}}" wx:for-item="item" wx:key="key">
+    <view wx:if="{{item.product.length}}">
+      <p>{{item.name}}</p>
+      <view class="categoryline"></view>
+      <view class="productgoodshead">
+        <image src="{{item.img}}" mode="{{scaleToFill}}"></image>
+      </view>
+      <view class="indexProductlist">
+        <view wx:for="{{item.product}}" wx:for-item="cell" wx:key="index">
+          <view class="indexProductSigle">
+            <image src="{{cell.img}}"></image>
+          </view>
+
+        </view>
+
+      </view>
+    </view>
+  </view>
 </view>
+
 <loading hidden="{{loadingHidden}}">
   加载中...
 </loading>
