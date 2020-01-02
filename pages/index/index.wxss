@@ -69,14 +69,16 @@
 
 .category .specialgoods {
   width: 49%;
-  height: 300rpx;
+  height: 150rpx;
   /* border: 1rpx solid silver; */
   float: left;
 }
 
 .category .specialgoods image {
-  width: 100%;
+  width: 75%;
   height: 100%;
+  margin-left: 50rpx;
+  margin-top:5rpx;
 }
 
 .ProductDetails {
@@ -104,16 +106,41 @@
   width: 100%;
   height: 150rpx;
 }
-.ProductDetails .indexProductlist{
+
+.ProductDetails .indexProductlist {
   width: 100%;
-  height: 300px;
-  border: 1rpx solid silver;
 }
-.indexProductSigle{
+
+.ProductDetails .indexProductSigle {
   width: 50%;
-  height: 150rpx;
+  margin-top: 5rpx;
+  float: left;
 }
-.indexProductSigle image{
-  width: 50%;
+
+.indexProductSigle image {
+  width: 75%;
   height: 200rpx;
+  margin-left: 50rpx;
+}
+
+.indexProductSigle .productname {
+  width: 100%;
+  height: 200rpx;
+  margin-left: 20rpx;
+}
+
+.indexProductSigle .productname  p {
+  font: 10rpx;
+  color: black;
+}
+
+.indexProductSigle .productname  text {
+  font: 6rpx;
+  color: silver;
+  text-decoration: line-through;
+}
+
+.indexProductSigle .productname  .heart {
+  font: 16rpx;
+  color: red;
 }

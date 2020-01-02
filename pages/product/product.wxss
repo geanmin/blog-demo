@@ -1,0 +1,100 @@
+/**index.wxss**/
+
+/*轮播图*/
+
+.container {
+  width: 100%;
+  padding: 0rpx;
+}
+
+.container swiper {
+  width: 100%;
+}
+
+.container swiper image {
+  width: 100%;
+  border-top: 0rpx;
+  height: 400rpx;
+}
+
+.productAllInfo {
+  width: 100%;
+  height: 100rpx;
+  /* border: 1rpx solid silver; */
+  margin-top: 5rpx;
+}
+
+.productAllInfo p {
+  color: black;
+  font: 16rpx;
+  margin-left: 26rpx;
+}
+
+.productAllInfo .productinfo {
+  margin-top: 5rpx;
+  width: 100%;
+  float: left;
+}
+
+.productAllInfo .productinfo p {
+  font: 12rpx;
+  color: red;
+}
+
+.productAllInfo .productinfo text {
+  font: 10rpx;
+  color: silver;
+  text-decoration: line-through;
+}
+
+.productAllInfo .productinfo .salecount {
+  font-size: 26rpx;
+  float: right;
+  margin-right: 20rpx;
+  color: silver;
+}
+
+.productAllInfo .productinfo .productcollection {
+  font-size: 30rpx;
+  float: right;
+  margin-right: 20rpx;
+  margin-bottom: 12rpx;
+}
+
+.productAllInfo .productinfo .productheart {
+  font-size: 26rpx;
+  float: right;
+  color: red;
+}
+
+.productAllInfo .productinfo .productheart p{
+  color: black;
+  margin-right: 10rpx;
+  margin-left: 6rpx;
+}
+
+/**横线*/
+.categoryline {
+  border-bottom: 1rpx solid silver;
+  width: 100%;
+  height: 1rpx;
+}
+
+/**规格*/
+.productSpec{
+  clear: both;
+  margin-left: 20rpx;
+  padding-left: 0rpx;
+  /* float: left; */
+  font-size: 30rpx;
+  padding-top: 24rpx;
+}
+
+/**数量*/
+.productnum{
+  margin-left: 20rpx;
+  padding-left: 0rpx;
+  /* float: left; */
+  font-size: 30rpx;
+  padding-top: 24rpx;
+}

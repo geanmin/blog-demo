@@ -23,6 +23,7 @@ Page({
      var that = this;
      //获取轮播图
     home.getBannerData((data)=>{
+      console.log(data);
       that.setData({
         background:data,
          loadingHidden: true
@@ -38,7 +39,7 @@ Page({
 
     //今日特价
     home.getDailyReals((data)=>{
-      console.log(data);
+      // console.log(data);
        that.setData({
          dailyReal:data,
        });
@@ -46,12 +47,19 @@ Page({
 
     //商品详情
     home.getCateGoryProduct((data)=>{
-      console.log(data);
+      // console.log(data);
       that.setData({
         Details: data,
       });
     });
   },
   
-
+  onThemesItemTap:function(event){
+    console.log(event);
+    var id = event.currentTarget.id;
+    console.log(id);
+    wx.navigateTo({
+      url: '../product/product.js?id = '+ id,
+    })
+  }
 })

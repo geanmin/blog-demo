@@ -29,7 +29,7 @@
         <p>今日特价</p>
         <view class="categoryline"></view>
         <view class="specialgoods" wx:for="{{dailyReal}}" wx:for-item="item" wx:key="key">
-          <image src="{{item.img[0]}}" mode="{{center}}"></image>
+          <image src="{{item.img[0]}}" mode="{{center}}" bindtap = "onThemesItemTap" id="{{item.id}}"></image>
         </view>
       </view>
     </view>
@@ -44,16 +44,23 @@
       <p>{{item.name}}</p>
       <view class="categoryline"></view>
       <view class="productgoodshead">
-        <image src="{{item.img}}" mode="{{scaleToFill}}"></image>
+        <image src="{{item.img}}" mode="{{center}}"></image>
       </view>
       <view class="indexProductlist">
         <view wx:for="{{item.product}}" wx:for-item="cell" wx:key="index">
           <view class="indexProductSigle">
-            <image src="{{cell.img}}"></image>
+            <image src="{{cell.img}}" mode="{{scaleToFill}}"></image>
+            <view class="productname">
+              <p>{{cell.name}}</p>
+              <view class="productprice">
+                <p>{{cell.price}}</p>
+                <text> {{cell.oprice}} </text>
+                <p class = 'heart'>❤ \t 3</p>
+              </view>
+            </view>
           </view>
 
         </view>
-
       </view>
     </view>
   </view>

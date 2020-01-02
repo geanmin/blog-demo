@@ -1,0 +1,37 @@
+<view class="container">
+  <!--轮播-->
+  <swiper indicator-dots="{{true}}" autoplay="true" interval="2000" duration="500">
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item>
+        <view class="swiper-item {{item}}">
+          <image src="{{item}}"></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="productAllInfo">
+    <p>{{productDets.name}}</p>
+    <view class="productinfo">
+      <p>¥{{productDets.price}}</p>
+      <text> {{productDets.oprice}} </text>
+      <view class="productheart">❤
+        <p>5</p>
+      </view>
+      <view class="productcollection">★</view>
+      <view class="salecount">
+        <view wx:if="{{productDets.salecount>0}}">销量:{{productDets.salecount}}</view>
+        <view wx:else>销量: 3 </view>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="categoryline"></view>
+  <view class="productSpec">
+    规格：{{productDets.weight}} \t {{productDets.unit}}
+  </view>
+  <view class="productnum">
+    数量：{{productDets.weight}} \t {{productDets.unit}}
+  </view> 
+</view>
