@@ -187,9 +187,24 @@
  width: 80rpx;
  height: 80rpx;
  float: left;
- margin-left: 30rpx;
+ margin-left: 70rpx;
 }
 .productcat .buycart image{
  width: 60rpx;
  height: 60rpx;
+}
+.productcat .cartTotalCounts{
+  float: left;
+  font-size: 24rpx;
+  background-color: #AB956D;
+  color: white;
+  position: absolute;
+  right: 54rpx;
+  top: -10rpx;
+  height: 36rpx;
+  width: 36rpx;
+  line-height: 36rpx;
+  border-radius: 36rpx;
+  text-align: center;
+  margin-left: 50rpx;
 }

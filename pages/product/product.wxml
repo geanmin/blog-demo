@@ -48,15 +48,15 @@
     <view class="home">
       <image src="../../images/home.png"></image>
     </view>
-    <view class="addcat">
+    <view class="addcat" bindtap="onAddingToCartTap" style="{{translateStyle}}" >
       <text>加入购物车</text>
     </view>
     <view class="orderbynow">
       <text>立即购买</text>
     </view>
-    <view class="buycart">
-      <image src="../../images/car.png"></image>
-      <view class="cartTotalCounts">1</view>
+    <view class="buycart {{isShake?'animate':''}}" bindtap="onclick">
+      <image src="../../images/car.png" class="fiexd-cart {{isShake?'animate':''}}"></image>
+      <view class="cartTotalCounts" wx:if = "{{cartTotalCounts>0}}">{{cartTotalCounts}}</view>
     </view>
   </view>
   <loading hidden="{{loadingHidden}}">
