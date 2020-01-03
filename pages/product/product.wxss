@@ -98,3 +98,11 @@
   font-size: 30rpx;
   padding-top: 24rpx;
 }
+
+/**数量加减*/
+.productnum .numreduce{
+  font-size: 50rpx;
+  border: 1px solid black;
+  height: 10rpx;
+  width: 40rpx;
+}

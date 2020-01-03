@@ -32,6 +32,6 @@
     规格：{{productDets.weight}} \t {{productDets.unit}}
   </view>
   <view class="productnum">
-    数量：{{productDets.weight}} \t {{productDets.unit}}
+    数量：<p class="numreduce">-</p>
   </view> 
 </view>
