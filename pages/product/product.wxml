@@ -32,6 +32,34 @@
     规格：{{productDets.weight}} \t {{productDets.unit}}
   </view>
   <view class="productnum">
-    数量：<p class="numreduce">-</p>
-  </view> 
+    数量：
+    <view class="productreduce" bindtap="productreduce">
+      <text>-</text>
+    </view>
+    <view class="num">
+      <input value="1"></input>
+    </view>
+    <view class="productadd" bindtap="productadd">
+      <text>+</text>
+    </view>
+    <view>（库存：{{productDets.stock}}件）</view>
+  </view>
+  <view class="productcat">
+    <view class="home">
+      <image src="../../images/home.png"></image>
+    </view>
+    <view class="addcat">
+      <text>加入购物车</text>
+    </view>
+    <view class="orderbynow">
+      <text>立即购买</text>
+    </view>
+    <view class="buycart">
+      <image src="../../images/car.png"></image>
+      <view class="cartTotalCounts">1</view>
+    </view>
+  </view>
+  <loading hidden="{{loadingHidden}}">
+    加载中...
+  </loading>
 </view>

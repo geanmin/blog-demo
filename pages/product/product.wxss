@@ -67,13 +67,14 @@
   color: red;
 }
 
-.productAllInfo .productinfo .productheart p{
+.productAllInfo .productinfo .productheart p {
   color: black;
   margin-right: 10rpx;
   margin-left: 6rpx;
 }
 
 /**横线*/
+
 .categoryline {
   border-bottom: 1rpx solid silver;
   width: 100%;
@@ -81,7 +82,8 @@
 }
 
 /**规格*/
-.productSpec{
+
+.productSpec {
   clear: both;
   margin-left: 20rpx;
   padding-left: 0rpx;
@@ -91,18 +93,103 @@
 }
 
 /**数量*/
-.productnum{
+
+.productnum {
   margin-left: 20rpx;
   padding-left: 0rpx;
-  /* float: left; */
+  float: left;
   font-size: 30rpx;
   padding-top: 24rpx;
+  display: flex;
 }
 
 /**数量加减*/
-.productnum .numreduce{
-  font-size: 50rpx;
-  border: 1px solid black;
-  height: 10rpx;
-  width: 40rpx;
+
+.productnum .productreduce {
+  border: 1rpx solid silver;
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+}
+
+.productnum .productreduce text {
+  font-size: 40rpx;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10rpx;
+}
+
+.num {
+  border: 1px solid silver;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+/**数量加加*/
+
+.productnum .productadd {
+  border: 1rpx solid silver;
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+}
+
+.productnum .productadd text {
+  font-size: 40rpx;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10rpx;
+}
+
+/**加入购物车*/
+
+.productcat {
+  position: fixed;
+  bottom: 10rpx;
+  /* border: 1px solid silver; */
+  text-align: center;
+  margin-left: 40rpx;
+}
+.productcat .home {
+ width: 80rpx;
+ height: 80rpx;
+ float: left;
+ margin-left: 30rpx;
+}
+.productcat .home image{
+ width: 60rpx;
+ height: 60rpx;
+}
+
+.productcat text{
+   font-size: 24rpx;
+   color: white;
+}
+
+.productcat .addcat {
+  width: 150rpx;
+  height: 60rpx;
+  float: left;
+  margin-left: 40rpx;
+  background: green;
+}
+
+.productcat .orderbynow {
+  width: 150rpx;
+  height: 60rpx;
+  float: left;
+  /* border: 1px solid silver; */
+  margin-left: 30rpx;
+  background: #FF6400;
+}
+
+.productcat .buycart {
+ width: 80rpx;
+ height: 80rpx;
+ float: left;
+ margin-left: 30rpx;
+}
+.productcat .buycart image{
+ width: 60rpx;
+ height: 60rpx;
 }
