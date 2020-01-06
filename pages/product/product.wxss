@@ -73,6 +73,38 @@
   margin-left: 6rpx;
 }
 
+.small-top-img {
+  font-size: 34rpx;
+  background-color: #ab956d;
+  color: white;
+  position: absolute;
+  left: 174rpx;
+  top: 500rpx;
+  height: 40rpx;
+  width: 40rpx;
+  line-height: 36rpx;
+  border-radius: 26rpx;
+  text-align: center;
+  display: none;
+}
+
+.small-top-img.animate {
+  font-size: 34rpx;
+  background-color: #ab956d;
+  color: white;
+  position: absolute;
+  left: 174rpx;
+  top: 500rpx;
+  height: 40rpx;
+  width: 40rpx;
+  line-height: 36rpx;
+  border-radius: 26rpx;
+  text-align: center;
+  display: none;
+  opacity: 1;
+  -webkit-transition: all 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
 /**横线*/
 
 .categoryline {
@@ -150,20 +182,22 @@
   text-align: center;
   margin-left: 40rpx;
 }
+
 .productcat .home {
- width: 80rpx;
- height: 80rpx;
- float: left;
- margin-left: 30rpx;
-}
-.productcat .home image{
- width: 60rpx;
- height: 60rpx;
+  width: 80rpx;
+  height: 80rpx;
+  float: left;
+  margin-left: 30rpx;
 }
 
-.productcat text{
-   font-size: 24rpx;
-   color: white;
+.productcat .home image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.productcat text {
+  font-size: 24rpx;
+  color: white;
 }
 
 .productcat .addcat {
@@ -180,23 +214,25 @@
   float: left;
   /* border: 1px solid silver; */
   margin-left: 30rpx;
-  background: #FF6400;
+  background: #ff6400;
 }
 
 .productcat .buycart {
- width: 80rpx;
- height: 80rpx;
- float: left;
- margin-left: 70rpx;
+  width: 80rpx;
+  height: 80rpx;
+  float: left;
+  margin-left: 70rpx;
 }
-.productcat .buycart image{
- width: 60rpx;
- height: 60rpx;
+
+.productcat .buycart image {
+  width: 60rpx;
+  height: 60rpx;
 }
-.productcat .cartTotalCounts{
+
+.productcat .cartTotalCounts {
   float: left;
   font-size: 24rpx;
-  background-color: #AB956D;
+  background-color: #ab956d;
   color: white;
   position: absolute;
   right: 54rpx;
@@ -207,4 +243,22 @@
   border-radius: 36rpx;
   text-align: center;
   margin-left: 50rpx;
+}
+
+.fiexd-cart{
+  font-size: 24rpx;
+  background-color: #AB956D;
+  color: white;
+  position: absolute;
+  right: 64rpx;
+  top: 0rpx;
+  height: 36rpx;
+  width: 36rpx;
+  line-height: 36rpx;
+  border-radius: 36rpx;
+  text-align: center;
+}
+.fiexd-cart.animate{
+  animation: aCartScale 200ms cubic-bezier(.17,.67,.83,.67);
+  animation-fill-mode: backwards;
 }

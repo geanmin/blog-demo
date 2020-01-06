@@ -36,8 +36,9 @@
     <view class="productreduce" bindtap="productreduce">
       <text>-</text>
     </view>
+    <view class="small-top-img {{isFly?'animate':''}}" style="{{translateStyle}}" ></view>
     <view class="num">
-      <input value="1"></input>
+      <input bindinput='getInputValue'  name='num' type='text' placeholder='1' ></input>
     </view>
     <view class="productadd" bindtap="productadd">
       <text>+</text>
@@ -48,7 +49,7 @@
     <view class="home">
       <image src="../../images/home.png"></image>
     </view>
-    <view class="addcat" bindtap="onAddingToCartTap" style="{{translateStyle}}" >
+    <view class="addcat" bindtap="onAddingToCartTap" >
       <text>加入购物车</text>
     </view>
     <view class="orderbynow">
@@ -56,7 +57,7 @@
     </view>
     <view class="buycart" bindtap="onclick">
       <image src="../../images/car.png"></image>
-      <view class="cartTotalCounts" wx:if = "{{cartTotalCounts>0}}">{{cartTotalCounts}}</view>
+      <view wx:if = "{{cartTotalCounts>0}}" class="fiexd-cart {{isShake?'animate':''}}">{{cartTotalCounts}}</view>
     </view>
   </view>
   <loading hidden="{{loadingHidden}}">
