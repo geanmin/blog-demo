@@ -54,8 +54,8 @@
     <view class="orderbynow">
       <text>立即购买</text>
     </view>
-    <view class="buycart {{isShake?'animate':''}}" bindtap="onclick">
-      <image src="../../images/car.png" class="fiexd-cart {{isShake?'animate':''}}"></image>
+    <view class="buycart" bindtap="onclick">
+      <image src="../../images/car.png"></image>
       <view class="cartTotalCounts" wx:if = "{{cartTotalCounts>0}}">{{cartTotalCounts}}</view>
     </view>
   </view>
