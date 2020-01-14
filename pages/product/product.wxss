@@ -138,7 +138,7 @@
 /**数量加减*/
 
 .productnum .productreduce {
-  border: 1rpx solid silver;
+  /* border: 1rpx solid silver; */
   width: 50rpx;
   height: 50rpx;
   float: left;
@@ -160,7 +160,7 @@
 /**数量加加*/
 
 .productnum .productadd {
-  border: 1rpx solid silver;
+  /* border: 1rpx solid silver; */
   width: 50rpx;
   height: 50rpx;
   float: left;
