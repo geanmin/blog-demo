@@ -8,7 +8,6 @@ import {
 var product = new Product();
 var common = new Common();
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -25,6 +24,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    var id = options.id;
+    this.data.id = id;
     this._onLoadData();
     //先从内存中获取商品数量
   },
@@ -33,7 +34,7 @@ Page({
    * 商品详情页
    */
   _onLoadData: function(callback) {
-    product.getProductDetsInfo((data) => {
+    product.getProductDetsInfo(this.data.id,(data) => {
       this.setData({
         loadingHidden: true,
         productDets: data,

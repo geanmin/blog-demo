@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="cart-box">
+    <view class="cart-checkbox">
+      <image src="../../imgs/icon/all@selected.png"></image>
+    </view>
+    <view class="cart-img">
+      <image src="../../images/1.jpg" mode="{{center}}"> </image>
+      <text>$20</text>
+    </view>
+    <view class="cart-detail">
+      <text>青岛风光</text>
+      <p>-</p>
+      <p>8</p>
+      <p>+</p>
+    </view>
+    <view class="cart-del">
+      <image src="../../images/del.png" mode="{{center}}"></image>
+    </view>
+  </view>
+  <view class="order">
+    <view class="order-num">共计 5 件商品</view>
+    <view class="order-price">总价：¥ 5 元</view>
+  </view>
+  <view class="order-pay">
+     去结算
+  </view>
+</view>

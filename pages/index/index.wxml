@@ -49,7 +49,7 @@
       <view class="indexProductlist">
         <view wx:for="{{item.product}}" wx:for-item="cell" wx:key="index">
           <view class="indexProductSigle">
-            <image src="{{cell.img}}" mode="{{scaleToFill}}"></image>
+            <image src="{{cell.img}}" mode="{{scaleToFill}}" bindtap="detailInfo" id="{{item.id}}"></image>
             <view class="productname">
               <p>{{cell.name}}</p>
               <view class="productprice">

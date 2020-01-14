@@ -1,0 +1,126 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0rpx;
+}
+
+/**列表*/
+
+.cart-box {
+  width: 100%;
+  border: 1rpx solid silver;
+  float: left;
+}
+
+.cart-checkbox {
+  width: 15%;
+  height: 150rpx;
+  float: left;
+  /* border: 1rpx solid silver;  */
+}
+
+.cart-checkbox image {
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+}
+
+.cart-img {
+  width: 20%;
+  float: left;
+  height: 150rpx;
+}
+
+.cart-img image {
+  width: 120rpx;
+  height: 120rpx;
+  margin-top: 20rpx;
+}
+
+.cart-img text{
+  position: relative;
+  top: -40rpx;
+  left: -2rpx; 
+  z-index: 999;
+  background-color: silver;
+  font-size: 26rpx;
+  float: left;
+  width: 125rpx;
+  text-align:center;
+  opacity: 0.7;
+
+}
+
+/**详情*/
+.cart-detail {
+  width: 30%;
+  height: 150rpx;
+  float: left;
+  margin-left: 50rpx;
+  margin-top: 5rpx;
+}
+
+.cart-detail text{
+  display: block;
+  font-size: 30rpx;
+  margin-top:15rpx;
+}
+.cart-detail p{
+  width: 50rpx;
+  /* border: 1rpx solid sienna; */
+  float: left;
+  padding-top: 10rpx; 
+  margin-top: 10rpx; 
+  font-size: 40rpx;
+}
+
+/**删除*/
+.cart-del{
+  width: 20%;
+  height: 150rpx;
+  float: left;
+  margin-left: 30rpx;
+}
+
+.cart-del image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 50rpx;
+  margin-left: 10rpx;
+}
+
+/**下单*/
+.order{
+  width: 100%;
+  height: 80rpx;
+  border: 1rpx solid silver;
+}
+.order .order-num{
+  float: left;
+  width: 30%;
+  height: 80rpx;
+  font-size: 25rpx;
+  padding-left: 320rpx;
+  padding-top: 20rpx;
+}
+.order .order-price{
+  float: left;
+  width: 20%;
+  height: 80rpx;
+  font-size: 25rpx;
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+}
+
+/**去结算*/
+
+.order-pay{
+  width: 100%;
+  height: 60rpx;
+  font-size: 35rpx;
+  text-align: center;
+  background-color: #FF6400;
+  padding-top: 18rpx;
+}

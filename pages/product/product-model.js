@@ -6,10 +6,10 @@ class Product extends Base{
     super();
   }
 
-  getProductDetsInfo(callback){
+  getProductDetsInfo(id,callback){
     var that = this;
     var params = {
-      url: '/api/v1/getProductDetsInfo/'+3,
+      url: '/api/v1/getProductDetsInfo/'+id,
       sCallback:function(data){
          data = data.data;
          callback && callback(data);
