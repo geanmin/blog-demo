@@ -74,7 +74,7 @@ Page({
     //同时传递是加减
     this._flyToCartEffect(event, 1);
     //同时将购物车数据加入到内存去
-    this.addToCart();
+    // this.addToCart();
   },
 
   /**购物车加入内存中 */

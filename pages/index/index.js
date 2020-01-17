@@ -48,7 +48,7 @@ Page({
 
     //商品详情
     home.getCateGoryProduct((data) => {
-
+      // console.log(data);
       that.setData({
         Details: data,
       });
